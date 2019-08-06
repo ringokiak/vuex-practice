@@ -2,10 +2,10 @@
   <div>
     <button @click="redFun(3)">-3</button>
     <button @click="redFun(1)">-</button>
-    <span class="mid">{{ count }}</span>
+    <span class="mid">{{ countToCn }}</span>
     <button @click="addFun(1)">+</button>
     <button @click="addFun(3)">+3</button>
-    <div style="marginTop:30px;">getter 转换正负：{{ countToCn }}</div>
+    <!-- <div style="marginTop:30px;">getter 转换正负：{{ countToCn }}</div> -->
   </div>
 </template>
 

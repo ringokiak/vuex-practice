@@ -1,11 +1,10 @@
 export default {
   countToCn: state => {
-    if (state.count < 0) {
-      return Math.abs(state.count);
-    } else if (state.count === 0) {
-      return 0;
+    let countExist = window.sessionStorage.getItem("count");
+    if (!state.count) {
+      return JSON.parse(countExist) || 0;
     } else {
-      return state.count - 2 * state.count;
+      return state.count;
     }
   }
 };
